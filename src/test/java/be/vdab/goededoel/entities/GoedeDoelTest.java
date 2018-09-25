@@ -23,6 +23,6 @@ public class GoedeDoelTest {
 
 	@Test
 	public void eenNieuwDoelHeeftNogNietsOpgebracht() {
-		assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.TEN));
+		assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
 	}
 }
