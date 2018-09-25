@@ -25,4 +25,14 @@ public class GoedeDoelTest {
 	public void eenNieuwDoelHeeftNogNietsOpgebracht() {
 		assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
 	}
+
+	@Test
+	public void goedeDoelenMetDezelfdeNaamMoetenVolgensEqualsGelijkZijn() {
+		assertEquals(new GoedeDoel("CLINICLOWNS"), doel);
+	}
+
+	@Test
+	public void goedeDoelenMetVerschillendeNaamMoetenVolgensEqualsVerschillendZijn() {
+		assertNotEquals(new GoedeDoel("Unicef"), doel);
+	}
 }
